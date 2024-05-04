@@ -1,6 +1,5 @@
-import Image from "next/image";
+import NavbarLayout from "@/components/layouts/Navbar";
 import { Frank_Ruhl_Libre, Lato } from "next/font/google";
-import NavbarLayout from "@/component/layout/Navbar";
 
 const lato = Lato({
   weight: ["300", "400", "700"],
@@ -15,7 +14,7 @@ const frank = Frank_Ruhl_Libre({
 export default function Home() {
   return (
     <div
-      className={`w-full min-h-dvh flex flex-col ${frank.className} bg-primary text-text`}
+      className={`w-full min-h-[200vh] flex flex-col ${frank.className} bg-primary text-text`}
     >
       <NavbarLayout />
     </div>
