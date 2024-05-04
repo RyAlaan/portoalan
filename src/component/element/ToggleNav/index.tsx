@@ -1,9 +1,12 @@
 import clsx from "clsx";
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 
-const ToggleNav = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+interface ToggleNavProps {
+  isNavOpen: boolean;
+  setIsNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
+const ToggleNav: React.FC<ToggleNavProps> = ({ isNavOpen, setIsNavOpen }) => {
   return (
     <div
       onClick={() => setIsNavOpen(!isNavOpen)}
@@ -39,7 +42,7 @@ const ToggleNav = () => {
         <div className="absolute top-0 w-2 h-2 rounded-full bg-transparent border-2 border-secondary group-hover:border-transparent transition-all duration-300"></div>
         <div
           className={clsx(
-            { "w-8 border-text": isNavOpen, },
+            { "w-8 border-text": isNavOpen },
             "w-2 group-hover:w-8 h-2 rounded-full bg-transparent border-2 group-hover:border-text transition-all duration-700"
           )}
         ></div>
