@@ -5,7 +5,7 @@ const NavbarLayout = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 
   return (
-    <div className="fixed z-[99999] w-full px-20 py-5 flex flex-row justify-between items-center bg-primary border-b-2 border-secondary">
+    <div className="fixed z-[99999] w-full px-6 md:px-20 py-5 flex flex-row justify-between items-center bg-primary border-b-2 border-secondary">
       <a href="/" className="text-3xl">
         RyAlaan
       </a>
