@@ -30,6 +30,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .marquee__part {
+    @apply py-5 flex shrink-0 items-center gap-8;
+  }
 }
 
 .bg-gradient {
