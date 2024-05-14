@@ -13,179 +13,136 @@ const lato = Lato({
 });
 
 const Marquee = () => {
-  // useEffect(() => {
-  //   // const inner = document.getElementById("marquee__inner");
-  //   const parts = document.querySelectorAll<HTMLElement>(".marquee__part");
-
-  //   let totalWidth = 0;
-  //   parts.forEach((part) => {
-  //     totalWidth += part.offsetWidth;
-  //   });
-
-  //   let totalGap = (parts.length - 1) * 32;
-
-  //   gsap.fromTo(
-  //     "#marquee__inner",
-  //     { x: 0 },
-  //     {
-  //       x: -1 * (totalWidth + totalGap),
-  //       ease: "none",
-  //       repeat: -1,
-  //       duration: 10,
-  //     }
-  //   );
-  // }, []);
-
   return (
     <div
       className={`${lato.className} relative mt-12 flex flex-row overflow-hidden gap-4 select-none font-lato text-text font-semibold text-2xl rotate-2 bg-[#E3C696]`}
     >
-      <div className={`${styles.marquee} min-w-full justify-around flex flex-row shrink-0`}>
-        <div className="marquee__part">
-          Student
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+      <div
+        className={`${styles.marquee} min-w-full justify-around flex flex-row items-center shrink-0`}
+      >
+        <div className="marquee__part">Student</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
-        <div className="marquee__part">
-          Derry Alantis
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+        <div className="marquee__part">Derry Alantis</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
-        <div className="marquee__part">
-          Junior Web Developer
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+        <div className="marquee__part">Junior Web Developer</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
-        <div className="marquee__part">
-          Student
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+        <div className="marquee__part">Student</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
-        <div className="marquee__part">
-          Derry Alantis
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+        <div className="marquee__part">Derry Alantis</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
-        <div className="marquee__part">
-          Junior Web Developer
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+        <div className="marquee__part">Junior Web Developer</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
       </div>
-      <div className={`${styles.marquee} min-w-full justify-around flex flex-row shrink-0`}>
-        <div className="marquee__part">
-          Student
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+      <div
+        className={`${styles.marquee} min-w-full justify-around flex flex-row items-center shrink-0`}
+      >
+        <div className="marquee__part">Student</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
-        <div className="marquee__part">
-          Derry Alantis
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+        <div className="marquee__part">Derry Alantis</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
-        <div className="marquee__part">
-          Junior Web Developer
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+        <div className="marquee__part">Junior Web Developer</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
-        <div className="marquee__part">
-          Student
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+        <div className="marquee__part">Student</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
-        <div className="marquee__part">
-          Derry Alantis
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+        <div className="marquee__part">Derry Alantis</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
-        <div className="marquee__part">
-          Junior Web Developer
-          <div className="star ">
-            <Image
-              src="/marquee.svg"
-              alt="star"
-              className="transition-all mr-8"
-              width={40}
-              height={40}
-            />
-          </div>
+        <div className="marquee__part">Junior Web Developer</div>
+        <div className="star ">
+          <Image
+            src="/marquee.svg"
+            alt="star"
+            className="transition-all mr-8"
+            width={40}
+            height={40}
+          />
         </div>
       </div>
     </div>

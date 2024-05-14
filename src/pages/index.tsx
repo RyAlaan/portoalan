@@ -17,6 +17,7 @@ export default function Home() {
       <NavbarLayout />
       <HeaderLayout />
       <Marquee />
+      
     </div>
   );
 }
