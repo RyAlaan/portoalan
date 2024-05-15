@@ -6,7 +6,7 @@ const NavbarLayout = () => {
 
   return (
     <div className="fixed z-[99999] w-full bg-primary border-b-2 border-secondary">
-      <div className="w-full max-w-7xl mx-auto px-6 md:px-20 py-5 flex flex-row justify-between items-center">
+      <div className="w-full max-w-7xl mx-auto px-6 md:px-20 xl:px-0 py-5 flex flex-row justify-between items-center">
         <a href="/" className="text-3xl">
           RyAlaan
         </a>
@@ -20,7 +20,7 @@ const NavbarLayout = () => {
             <span className="w-0 h-0.5 rounded-full bg-text transition-all duration-500 group-hover:w-full"></span>
           </div>
           <div className="flex flex-col group">
-            <a href="#contact">Contact Me</a>
+             <a href="#contact">Contact Me</a>
             <span className="w-0 h-0.5 rounded-full bg-text transition-all duration-500 group-hover:w-full"></span>
           </div>
         </div>
