@@ -1,0 +1,76 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "image": "html.svg",
+      "stack": "Front End"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "image": "css.svg",
+      "stack": "Front End"
+    },
+    {
+      "id": 3,
+      "name": "Javascript",
+      "image": "js.svg",
+      "stack": "Front End"
+    },
+    {
+      "id": 4,
+      "name": "TailwindCSS",
+      "image": "tailwindcss.svg",
+      "stack": "Front End"
+    },
+    {
+      "id": 5,
+      "name": "ReactJS",
+      "image": "reactjs.svg",
+      "stack": "Front End"
+    },
+    {
+      "id": 6,
+      "name": "NodeJS",
+      "image": "nodejs.svg",
+      "stack": "Back End"
+    },
+    {
+      "id": 7,
+      "name": "Go",
+      "image": "golang.svg",
+      "stack": "Back End"
+    },
+    {
+      "id": 8,
+      "name": "NextJS",
+      "image": "nextjs.svg",
+      "stack": "Full Stack"
+    },
+    {
+      "id": 9,
+      "name": "MySQL",
+      "image": "mysql.svg",
+      "stack": "Database"
+    },
+    {
+      "id": 10,
+      "name": "Firebase",
+      "image": "firebase.svg",
+      "stack": "Database"
+    },
+    {
+      "id": 11,
+      "name": "Git",
+      "image": "git.svg",
+      "stack": "Tool"
+    },
+    {
+      "id": 12,
+      "name": "Figma",
+      "image": "figma.svg",
+      "stack": "Tool"
+    }
+  ]
+}
