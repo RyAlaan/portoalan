@@ -1,8 +1,8 @@
 import HeaderLayout from "@/components/layouts/Header";
-import Marquee from "@/components/layouts/Marquee";
+import MarqueeLayout from "@/components/layouts/Marquee";
 import NavbarLayout from "@/components/layouts/Navbar";
-import { Frank_Ruhl_Libre, Lato } from "next/font/google";
-import Image from "next/image";
+import SkillsLayout from "@/components/layouts/Skills";
+import { Frank_Ruhl_Libre } from "next/font/google";
 
 const frank = Frank_Ruhl_Libre({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -16,8 +16,8 @@ export default function Home() {
     >
       <NavbarLayout />
       <HeaderLayout />
-      <Marquee />
-      
+      <MarqueeLayout />
+      <SkillsLayout />
     </div>
   );
 }

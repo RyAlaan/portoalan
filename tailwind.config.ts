@@ -19,6 +19,7 @@ const config: Config = {
         primary: "#ECE3CE",
         secondary: "#DEAC80",
         text: "#34251F",
+        border: "#A79277",
       },
     },
   },

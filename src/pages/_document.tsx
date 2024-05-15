@@ -6,7 +6,7 @@ export default function Document() {
       <Head >
         <title>RyAlaan</title>
       </Head>
-      <body>
+      <body className="scroll-smooth">
         <Main />
         <NextScript />
       </body>

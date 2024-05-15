@@ -36,6 +36,10 @@ body {
   }
 }
 
+body {
+  scroll-behaviour: smooth;
+}
+
 .bg-gradient {
   background: rgb(236, 227, 206);
   background: linear-gradient(
@@ -43,4 +47,8 @@ body {
     rgba(236, 227, 206, 1) 0%,
     rgba(180, 212, 255, 1) 58%
   );
+
+  .font-outline {
+    -webkit-text-stroke: 3px #34251f;
+  }
 }
