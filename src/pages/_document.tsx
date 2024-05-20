@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head >
-        <title>RyAlaan</title>
       </Head>
       <body className="scroll-smooth">
         <Main />

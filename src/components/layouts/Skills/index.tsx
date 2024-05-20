@@ -1,15 +1,34 @@
 import Image from "next/image";
 import skillsData from "./skillsData.json";
 import { SkillType } from "@/types/skills.types";
-import styles from "./index.module.css";
+import styles from "./skills.module.css";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const SkillsLayout = () => {
   const skills = skillsData.skills as SkillType[];
+  const textParallax = useRef(null);
+
+  useEffect(() => {
+    const el = textParallax.current;
+    gsap.to(el, {
+      x: 0.5 * ScrollTrigger.maxScroll(window),
+      ease: "linear",
+      scrollTrigger: {
+        trigger: "#textParallax",
+        invalidateOnRefresh: true,
+        scrub: 0,
+      },
+    });
+  }, []);
 
   return (
     <div
       id="skills"
-      className="relative w-full px-3 py-10 md:px-32 md:py-28 xl:p-0 flex flex-col"
+      className="relative w-full min-h-[200vh] px-32 py-28 flex flex-col gap-y-20"
     >
       <div className="w-full max-w-7xl mx-auto flex flex-col gap-y-20">
         <div className="w-full gap-x-5 flex flex-row items-center justify-center z-10">
@@ -45,7 +64,8 @@ const SkillsLayout = () => {
       </div>
       <h1
         id="textParallax"
-        className={`absolute left-0 text-9xl font-frank font-bold text-transparent ${styles.fontOutline} z-[1]`}
+        className={`absolute left-0 top-44 text-9xl font-frank font-bold text-transparent ${styles.fontOutline} z-[1]`}
+        ref={textParallax}
       >
         My Skills
       </h1>
