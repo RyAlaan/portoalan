@@ -13,8 +13,7 @@ const SkillsLayout = () => {
   const textParallax = useRef(null);
 
   useEffect(() => {
-    const el = textParallax.current;
-    gsap.to(el, {
+    gsap.to(textParallax.current, {
       x: 0.5 * ScrollTrigger.maxScroll(window),
       ease: "linear",
       scrollTrigger: {
@@ -40,7 +39,7 @@ const SkillsLayout = () => {
           {skills.map((skill) => (
             <div
               key={skill.id}
-              className="relative w-36 md:w-56 z-10 cursor-pointer group"
+              className="relative w-36 md:w-56 z-10 cursor-pointer group -translate-x-[35rem] opacity-50"
             >
               <div
                 className="px-2 py-1 md:px-5 md:py-4 flex flex-row items-center gap-x-4 border-2 border-border
