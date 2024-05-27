@@ -58,36 +58,38 @@ const SkillsLayout = () => {
       id="skills"
       className="relative w-full min-h-[200vh] px-32 py-28 flex flex-col gap-y-20"
     >
-        <div className="w-full gap-x-5 flex flex-row items-center justify-center z-10">
-          <span className="w-64 h-0.5 bg-secondary rounded-full"></span>
-          <h1 className="text-4xl font-bold">Skills</h1>
-          <span className="w-64 h-0.5 bg-secondary rounded-full"></span>
-        </div>
-        <div className="w-full flex flex-wrap items-center justify-center gap-8 md:gap-16">
-          {skills.map((skill) => (
+      <div className="w-full gap-x-5 flex flex-row items-center justify-center z-10">
+        <span className="w-64 h-0.5 bg-secondary rounded-full"></span>
+        <h1 className="text-4xl font-bold">Skills</h1>
+        <span className="w-64 h-0.5 bg-secondary rounded-full"></span>
+      </div>
+      <div
+        ref={skillsRef}
+        className="w-full flex flex-wrap items-center justify-center gap-8 md:gap-16"
+      >
+        {skills.map((skill) => (
+          <div
+            key={skill.id}
+            className="items-skill relative w-36 md:w-56 z-10 cursor-pointer group"
+          >
             <div
-              key={skill.id}
-              className="relative w-36 md:w-56 z-10 cursor-pointer group -translate-x-[35rem] opacity-50"
+              className="px-2 py-1 md:px-5 md:py-4 flex flex-row items-center gap-x-4 border-2 border-border
+            bg-primary"
             >
-              <div
-                className="px-2 py-1 md:px-5 md:py-4 flex flex-row items-center gap-x-4 border-2 border-border
-             bg-primary"
-              >
-                <Image
-                  src={`/skills/${skill.image}`}
-                  alt={skill.name}
-                  width={32}
-                  height={32}
-                />
-                <div className="font-frank md:font-medium">
-                  <h3 className="text-sm md:text-xl">{skill.name}</h3>
-                  <p className="text-xs">{skill.stack}</p>
-                </div>
+              <Image
+                src={`/skills/${skill.image}`}
+                alt={skill.name}
+                width={32}
+                height={32}
+              />
+              <div className="font-frank font-medium">
+                <h3 className="text-xl">{skill.name}</h3>
+                <p className="text-sm">{skill.stack}</p>
               </div>
-              <div className="absolute left-2 top-2 md:left-4 md:top-4 group-hover:left-0 group-hover:top-0 w-full h-full bg-border -z-10 transition-all duration-500"></div>
             </div>
-          ))}
-        </div>
+            <div className="absolute left-2 top-2 md:left-4 md:top-4 group-hover:left-0 group-hover:top-0 w-full h-full bg-border -z-10 transition-all duration-500"></div>
+          </div>
+        ))}
       </div>
       <h1
         id="textParallax"
