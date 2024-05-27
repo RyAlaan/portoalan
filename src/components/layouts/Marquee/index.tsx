@@ -21,7 +21,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />
@@ -31,7 +31,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />
@@ -41,7 +41,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />
@@ -51,7 +51,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />
@@ -61,7 +61,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />
@@ -71,7 +71,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />
@@ -85,7 +85,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />
@@ -95,7 +95,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />
@@ -105,7 +105,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />
@@ -115,7 +115,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />
@@ -125,7 +125,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />
@@ -135,7 +135,7 @@ const MarqueeLayout = () => {
           <Image
             src="/marquee.svg"
             alt="star"
-            className="transition-all mr-8"
+            className="transition-all"
             width={40}
             height={40}
           />

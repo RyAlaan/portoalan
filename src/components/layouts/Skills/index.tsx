@@ -11,20 +11,46 @@ gsap.registerPlugin(ScrollTrigger);
 const SkillsLayout = () => {
   const skills = skillsData.skills as SkillType[];
   const textParallax = useRef(null);
+  const skillsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const el = textParallax.current;
-    gsap.to(el, {
+    gsap.to(textParallax.current, {
       x: 0.5 * ScrollTrigger.maxScroll(window),
-      // y: 0.2 * ScrollTrigger.maxScroll(window),
-      // marker: true,
+      y: 0.2 * ScrollTrigger.maxScroll(window),
       ease: "linear",
       scrollTrigger: {
-        trigger: "#products",
+        // markers: true,
+        start: "bottom bottom",
+        end: "800% top",
+        trigger: "#textParallax",
         invalidateOnRefresh: true,
         scrub: 0,
       },
     });
+
+    if (skillsRef.current) {
+      const elements = skillsRef.current.querySelectorAll(".items-skill");
+      elements.forEach((e: any) => {
+        gsap.fromTo(
+          e,
+          { opacity: 0, x: -200 },
+          {
+            duration: 2,
+            ease: "power2.out",
+            opacity: 1,
+            x: 0,
+            scrollTrigger: {
+              markers: true,
+              start: "center 95%",
+              end: "bottom 95%",
+              trigger: e,
+              invalidateOnRefresh: true,
+              scrub: 0,
+            },
+          }
+        );
+      });
+    }
   }, []);
 
   return (
@@ -37,13 +63,13 @@ const SkillsLayout = () => {
         <h1 className="text-4xl font-bold">Skills</h1>
         <span className="w-64 h-0.5 bg-secondary rounded-full"></span>
       </div>
-      <div className="w-full flex flex-wrap items-center gap-16">
+      <div
+        ref={skillsRef}
+        className="w-full flex flex-wrap items-center gap-16"
+      >
         {skills.map((skill) => (
-          <div key={skill.id} className="relative w-56 z-10 group">
-            <div
-              className="px-5 py-4 flex flex-row items-center gap-x-4 border-2 border-border
-           bg-primary"
-            >
+          <div key={skill.id} className="items-skill relative w-56 z-10 group">
+            <div className="px-5 py-4 flex flex-row items-center gap-x-4 border-2 border-border bg-primary cursor-pointer">
               <Image
                 src={`/skills/${skill.image}`}
                 alt={skill.name}
@@ -61,7 +87,7 @@ const SkillsLayout = () => {
       </div>
       <h1
         id="textParallax"
-        className={`absolute left-0 top-44 text-9xl font-frank font-bold text-transparent ${styles.fontOutline} z-[1]`}
+        className={`absolute left-0 top-20 text-9xl font-frank font-bold text-transparent ${styles.fontOutline} z-[1]`}
         ref={textParallax}
       >
         My Skills
