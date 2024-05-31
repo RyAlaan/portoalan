@@ -40,7 +40,7 @@ const SkillsLayout = () => {
             opacity: 1,
             x: 0,
             scrollTrigger: {
-              // markers: true,
+              markers: true,
               start: "center 95%",
               end: "bottom 95%",
               trigger: e,
@@ -98,6 +98,7 @@ const SkillsLayout = () => {
       >
         My Skills
       </h1>
+      <div className="absolute bottom-10 w-1/12 h-64 border-text border-l-4 border-b-4"></div>
     </div>
   );
 };
