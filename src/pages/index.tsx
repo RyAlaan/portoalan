@@ -1,6 +1,7 @@
 import HeaderLayout from "@/components/layouts/Header";
 import MarqueeLayout from "@/components/layouts/Marquee";
 import NavbarLayout from "@/components/layouts/Navbar";
+import ProjectsLayout from "@/components/layouts/Projects";
 import SkillsLayout from "@/components/layouts/Skills";
 import { Frank_Ruhl_Libre } from "next/font/google";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <HeaderLayout />
       <MarqueeLayout />
       <SkillsLayout />
+      <ProjectsLayout />
     </div>
   );
 }

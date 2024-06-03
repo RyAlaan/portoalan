@@ -63,7 +63,7 @@ const HeaderLayout = () => {
           className="-scale-75 lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
         <Image
           src="/star.svg"
@@ -71,7 +71,7 @@ const HeaderLayout = () => {
           className="-scale-75  lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
         <Image
           src="/star.svg"
@@ -79,7 +79,7 @@ const HeaderLayout = () => {
           className="-scale-75  lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
         <Image
           src="/star.svg"
@@ -87,7 +87,7 @@ const HeaderLayout = () => {
           className="-scale-75  lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
         <Image
           src="/star.svg"
@@ -95,7 +95,7 @@ const HeaderLayout = () => {
           className="-scale-75  lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
         <Image
           src="/star.svg"
@@ -103,7 +103,7 @@ const HeaderLayout = () => {
           className="-scale-75  lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
       </div>
     </div>

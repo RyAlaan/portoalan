@@ -19,7 +19,6 @@ const SkillsLayout = () => {
       y: 0.2 * ScrollTrigger.maxScroll(window),
       ease: "linear",
       scrollTrigger: {
-        // markers: true,
         start: "bottom bottom",
         end: "800% top",
         trigger: "#textParallax",
@@ -40,7 +39,6 @@ const SkillsLayout = () => {
             opacity: 1,
             x: 0,
             scrollTrigger: {
-              markers: true,
               start: "center 95%",
               end: "bottom 95%",
               trigger: e,
@@ -93,7 +91,7 @@ const SkillsLayout = () => {
       </div>
       <h1
         id="textParallax"
-        className={`absolute left-0 top-20 text-9xl font-frank font-bold text-transparent ${styles.fontOutline} z-[1]`}
+        className={`absolute left-0 top-20 text-9xl font-frank font-bold text-transparent font-outline z-[1]`}
         ref={textParallax}
       >
         My Skills
