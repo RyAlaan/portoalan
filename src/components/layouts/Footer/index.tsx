@@ -45,10 +45,10 @@ const FooterLayout = () => {
           <div className="flex flex-col">
             <p className="text-xl font-medium">Find me here</p>
             <div className="w-full flex flex-row items-center justify-center gap-x-5 pt-1 text-3xl">
-              <a href="github.com/ryalaan">
+              <a target="_blank" href="https://github.com/ryalaan">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a href="github.com/ryalaann">
+              <a target="_blank" href="https://instagram.com/ryalaann">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
