@@ -57,9 +57,9 @@ const SkillsLayout = () => {
       className="relative mx-auto w-full max-w-7xl px-6 py-10 md:py-28 flex flex-col gap-y-20"
     >
       <div className="w-full gap-x-5 flex flex-row items-center justify-center z-10">
-        <span className="w-64 h-0.5 bg-secondary rounded-full"></span>
-        <h1 className="text-4xl font-bold">Skills</h1>
-        <span className="w-64 h-0.5 bg-secondary rounded-full"></span>
+        <span className="w-28 md:w-64 h-0.5 bg-secondary rounded-full"></span>
+        <h1 className="text-xl md:text-4xl font-bold">Skills</h1>
+        <span className="w-28 md:w-64 h-0.5 bg-secondary rounded-full"></span>
       </div>
       <div
         ref={skillsRef}

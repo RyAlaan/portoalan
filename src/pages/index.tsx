@@ -1,3 +1,4 @@
+import FooterLayout from "@/components/layouts/Footer";
 import HeaderLayout from "@/components/layouts/Header";
 import MarqueeLayout from "@/components/layouts/Marquee";
 import NavbarLayout from "@/components/layouts/Navbar";
@@ -20,6 +21,7 @@ export default function Home() {
       <MarqueeLayout />
       <SkillsLayout />
       <ProjectsLayout />
+      <FooterLayout />
     </div>
   );
 }
