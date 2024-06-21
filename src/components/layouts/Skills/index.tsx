@@ -40,7 +40,7 @@ const SkillsLayout = () => {
             opacity: 1,
             x: 0,
             scrollTrigger: {
-              markers: true,
+              // markers: true,
               start: "center 95%",
               end: "bottom 95%",
               trigger: e,
@@ -56,7 +56,7 @@ const SkillsLayout = () => {
   return (
     <div
       id="skills"
-      className="relative w-full min-h-[200vh] px-32 py-28 flex flex-col gap-y-20"
+      className="relative w-full px-32 py-28 flex flex-col gap-y-20"
     >
       <div className="w-full gap-x-5 flex flex-row items-center justify-center z-10">
         <span className="w-64 h-0.5 bg-secondary rounded-full"></span>
