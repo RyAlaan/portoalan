@@ -19,7 +19,6 @@ const SkillsLayout = () => {
       y: 0.2 * ScrollTrigger.maxScroll(window),
       ease: "linear",
       scrollTrigger: {
-        // markers: true,
         start: "bottom bottom",
         end: "800% top",
         trigger: "#textParallax",
@@ -56,12 +55,12 @@ const SkillsLayout = () => {
   return (
     <div
       id="skills"
-      className="relative w-full px-32 py-28 flex flex-col gap-y-20"
+      className="relative mx-auto w-full max-w-7xl px-6 py-10 md:py-28 flex flex-col gap-y-20"
     >
       <div className="w-full gap-x-5 flex flex-row items-center justify-center z-10">
-        <span className="w-64 h-0.5 bg-secondary rounded-full"></span>
-        <h1 className="text-4xl font-bold">Skills</h1>
-        <span className="w-64 h-0.5 bg-secondary rounded-full"></span>
+        <span className="w-28 md:w-64 h-0.5 bg-secondary rounded-full"></span>
+        <h1 className="text-xl md:text-4xl font-bold">Skills</h1>
+        <span className="w-28 md:w-64 h-0.5 bg-secondary rounded-full"></span>
       </div>
       <div
         ref={skillsRef}
@@ -79,11 +78,11 @@ const SkillsLayout = () => {
               <Image
                 src={`/skills/${skill.image}`}
                 alt={skill.name}
-                width={32}
-                height={32}
+                width={28}
+                height={28}
               />
               <div className="font-frank font-medium">
-                <h3 className="text-xl">{skill.name}</h3>
+                <h3 className="md:text-xl">{skill.name}</h3>
                 <p className="text-sm">{skill.stack}</p>
               </div>
             </div>
@@ -93,11 +92,12 @@ const SkillsLayout = () => {
       </div>
       <h1
         id="textParallax"
-        className={`absolute left-0 top-20 text-9xl font-frank font-bold text-transparent ${styles.fontOutline} z-[1]`}
+        className={`absolute left-0 top-20 text-9xl font-frank font-bold text-transparent font-outline z-[1]`}
         ref={textParallax}
       >
         My Skills
       </h1>
+      <div className="absolute bottom-10 w-1/12 h-64 border-text border-l-4 border-b-4"></div>
     </div>
   );
 };

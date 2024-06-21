@@ -1,6 +1,8 @@
+import FooterLayout from "@/components/layouts/Footer";
 import HeaderLayout from "@/components/layouts/Header";
 import MarqueeLayout from "@/components/layouts/Marquee";
 import NavbarLayout from "@/components/layouts/Navbar";
+import ProjectsLayout from "@/components/layouts/Projects";
 import SkillsLayout from "@/components/layouts/Skills";
 import { Frank_Ruhl_Libre } from "next/font/google";
 
@@ -12,12 +14,14 @@ const frank = Frank_Ruhl_Libre({
 export default function Home() {
   return (
     <div
-      className={`w-full min-h-[200vh] flex flex-col ${frank.className} bg-primary text-text overflow-x-hidden`}
+      className={`w-full flex flex-col ${frank.className} bg-primary text-text overflow-x-hidden`}
     >
       <NavbarLayout />
       <HeaderLayout />
       <MarqueeLayout />
       <SkillsLayout />
+      <ProjectsLayout />
+      <FooterLayout />
     </div>
   );
 }

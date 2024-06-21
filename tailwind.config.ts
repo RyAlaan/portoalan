@@ -18,9 +18,13 @@ const config: Config = {
       colors: {
         primary: "#ECE3CE",
         secondary: "#DEAC80",
+        tertiary : "#E3C696",
         text: "#34251F",
         border: "#A79277",
       },
+      fontSize : {
+        jumbo : ['256px', '1']
+      }
     },
   },
   plugins: [],

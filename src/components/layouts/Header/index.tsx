@@ -34,7 +34,7 @@ const HeaderLayout = () => {
   });
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto mt-20 px-6 md:px-14 lg:px-20 md:py-20 lg:py-28 xl:px-0 gap-y-14 flex flex-col-reverse md:flex-row items-center justify-between">
+    <div className="relative w-full max-w-7xl mx-auto mt-40 px-6 md:px-14 lg:px-20 md:py-20 lg:py-28 xl:px-0 gap-y-14 flex flex-col-reverse md:flex-row items-center justify-between">
       <div className="text-3xl md:text-5xl">
         <p>Hello There 👋.</p>
         <p>
@@ -48,13 +48,13 @@ const HeaderLayout = () => {
         </p>
         <p>A Junior Web Developer.</p>
       </div>
-      <div className="relative w-[300px] h-[300px] flex justify-center items-center ">
+      <div className="relative w-[300px] h-56 md:h-72 flex justify-center items-center ">
         <div className="h-full flex flex-row justify-center items-center gap-x-10">
-          <div className="side w-8 self-center bg-[#D9D9D9]"></div>
-          <div className="mid w-8 bg-[#D9D9D9]"></div>
-          <div className="side w-8 self-center bg-[#D9D9D9]"></div>
+          <div className="side w-6 md:w-8 self-center bg-[#D9D9D9]"></div>
+          <div className="mid w-6 md:w-8 bg-[#D9D9D9]"></div>
+          <div className="side w-6 md:w-8 self-center bg-[#D9D9D9]"></div>
         </div>
-        <div className="absolute -rotate-45 border-b-4 border-l-4 w-48 md:w-52 h-48 md:h-52 border-text bg-"></div>
+        <div className="absolute -rotate-45 border-b-4 border-l-4 w-36 md:w-52 h-36 md:h-52 border-text bg-"></div>
       </div>
       <div className="absolute bottom-0 left-10 hidden md:grid grid-flow-col grid-rows-2 lg:gap-4">
         <Image
@@ -63,7 +63,7 @@ const HeaderLayout = () => {
           className="-scale-75 lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
         <Image
           src="/star.svg"
@@ -71,7 +71,7 @@ const HeaderLayout = () => {
           className="-scale-75  lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
         <Image
           src="/star.svg"
@@ -79,7 +79,7 @@ const HeaderLayout = () => {
           className="-scale-75  lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
         <Image
           src="/star.svg"
@@ -87,7 +87,7 @@ const HeaderLayout = () => {
           className="-scale-75  lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
         <Image
           src="/star.svg"
@@ -95,7 +95,7 @@ const HeaderLayout = () => {
           className="-scale-75  lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
         <Image
           src="/star.svg"
@@ -103,7 +103,7 @@ const HeaderLayout = () => {
           className="-scale-75  lg:scale-100"
           width={40}
           height={40}
-          priority
+          
         />
       </div>
     </div>

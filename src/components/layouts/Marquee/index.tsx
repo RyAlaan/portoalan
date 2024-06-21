@@ -11,10 +11,10 @@ const lato = Lato({
 const MarqueeLayout = () => {
   return (
     <div
-      className={`${lato.className} relative my-20 flex flex-row overflow-hidden gap-4 select-none font-lato text-text font-semibold text-2xl rotate-2 bg-[#E3C696]`}
+      className={`${lato.className} relative my-20 flex flex-row overflow-hidden gap-4 select-none font-lato text-text font-semibold text-2xl rotate-2 bg-tertiary`}
     >
       <div
-        className={`${styles.marquee} min-w-full justify-around flex flex-row items-center shrink-0`}
+        className={`${styles.marquee} min-w-full gap-x-5 justify-around flex flex-row items-center shrink-0`}
       >
         <div className="marquee__part">Student</div>
         <div className="star ">
@@ -78,7 +78,7 @@ const MarqueeLayout = () => {
         </div>
       </div>
       <div
-        className={`${styles.marquee} min-w-full justify-around flex flex-row items-center shrink-0`}
+        className={`${styles.marquee} min-w-full gap-x-5 justify-around flex flex-row items-center shrink-0`}
       >
         <div className="marquee__part">Student</div>
         <div className="star ">
