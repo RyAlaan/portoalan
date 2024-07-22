@@ -1,7 +1,6 @@
 import Image from "next/image";
 import skillsData from "./skillsData.json";
 import { SkillType } from "@/types/skills.types";
-import styles from "./skills.module.css";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -55,7 +54,7 @@ const SkillsLayout = () => {
   return (
     <div
       id="skills"
-      className="relative mx-auto w-full max-w-7xl px-6 py-10 md:py-28 flex flex-col gap-y-20"
+      className="relative mx-auto min-h-[calc(100vh+2rem)] md:min-h-0 w-full max-w-7xl px-6 py-10 md:py-28 flex flex-col gap-y-20"
     >
       <div className="w-full gap-x-5 flex flex-row items-center justify-center z-10">
         <span className="w-28 md:w-64 h-0.5 bg-secondary rounded-full"></span>
